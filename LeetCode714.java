@@ -21,7 +21,7 @@ public class LeetCode714 {
             //持股的状态2个：1.当天持股 2.前天不持股当天买股
             dp[1] = Math.max(dp[1], dp[0] - prices[i]);
             System.out.println("不持股:" + dp[0] + "持股:" + dp[1]);
-            System.out.println("-------------------------------");
+            System.out.println("--------------------------------");
         }
         //返回不持股状态
         return dp[0];
